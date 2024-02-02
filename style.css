@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    gap: 3vw;
+    position: fixed;
+    z-index: 99;
+
+}
+
+.nav p {
+    font-size: 1.5vmax;
+    font-family: sans-serif;
+    position: relative;
+    cursor: pointer;
+}
+
+.page1 .nav p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1%;
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    transition: all ease 0.5s;
+}
+
+.page1 .nav p:hover::after {
+    width: 100%;
+
+}
+
+.nav p span {
+    background-color: rgb(214, 180, 10);
+    padding: 0.4vw;
+    border-radius: 50%;
+    gap: 0;
+}
+
+.nav img {
+    height: 100%;
+    background-size: cover;
+    margin-right: 5%;
+    /* width: 50%; */
+}
+
+.box {
+    width: 100%;
+    height: 85%;
+    display: flex;
+}
+
+.box1 {
+    height: 96vh;
+    width: 50vw;
+    background-color: blue;
+    background-image: url(https://sxvstyle.com/cdn/shop/files/960-11-copy-min_900x.webp?v=1682085718);
+    background-position: top;
+    background-size: cover;
+}
+
+.box2 {
+    height: 96vh;
+    width: 50vw;
+    background-color: rgb(106, 255, 0);
+    background-image: url(https://sxvstyle.com/cdn/shop/files/960-12-copy-min_900x.webp?v=1682085747);
+    background-position: center;
+    background-size: cover;
+}
+
+/* .page2{
+    width: 100vw;
+    height: auto;
+} */
+
+/* .scroll::-webkit-scrollbar {
+    width: 0%;
+} */
+
+.scroll .s {
+    min-width: 100%;
+    height: 100%;
+    background-color: #EFE9E5;
+    border-right: solid rgb(77, 74, 74);
+    display: inline-block;
+
+
+
+}
+
+.scroll {
+    width: 100vw;
+    height: 25vh;
+    /* display: flex; */
+    white-space:nowrap;
+    /* overflow-x: auto; */  
+    overflow-y: hidden;
+
+
+}
+
+.scroll1 {
+    width: 100vw;
+    height: 25vh;
+    background-color: gray;
+    background-image: url(https://sxvstyle.com/cdn/shop/files/SHOP12-min_955x700@2x.jpg?v=1652349368);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scroll2 {
+    width: 100vw;
+    height: 25vh;
+    background-color: gray;
+    background-image: url(https://sxvstyle.com/cdn/shop/files/SHOP-min_955x700@2x.jpg?v=1652349434);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scroll3 {
+    width: 100vw;
+    height: 25vh;
+    background-color: gray;
+    background-image: url(https://sxvstyle.com/cdn/shop/files/SHOP1-min_955x700@2x.jpg?v=1652349490);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page2 {
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+/* .page3{
+    width: 100vw;
+    height: 100vh;
+} */
+.tags {
+    width: 100vw;
+    height: 18vh;
+    /* background-color: #a52a2a; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    font-size: 110%;
+    font-family: sans-serif;
+}
+
+.tags h3 {
+    /* margin-left: 15%;
+    margin-right: 15%; */
+    font-size: 210%;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tag1 {
+    display: flex;
+    gap: 3vw;
+    cursor: pointer;
+    color: #847f7f;
+    transition: all ease 2s;
+
+}
+
+.tag1 p:hover {
+    color: black;
+    scale: 1.2;
+}
+
+.tag3 {
+    cursor: pointer;
+    /* margin-right: -1%; */
+}
+
+.tag3:hover {
+    text-decoration: underline;
+}
+
+.boxes {
+    width: 100vw;
+    /* height: 100%; */
+    /* background-color: rgb(102, 134, 99); */
+    display: flex;
+}
+
+.bb {
+    width: 25%;
+    height: 60vh;
+    /* background-color: aquamarine; */
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-right: solid gray;
+}
+
+.bb:hover .icons {
+    background-image: url(https://scxvstyle.com/cdn/shop/products/31_540x.jpg?v=1658915929);
+    right: 0%;
+    transition: all ease 1s;
+    background: transparent;
+}
+
+.boxes1 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/3copy_1120x.jpg?v=1658915928);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+.boxes1 :hover {
+    background-image: url(https://sxvstyle.com/cdn/shop/products/31_1120x.jpg?v=1658915929);
+    scale: 1.01;
+    background-color: black;
+    transition: all ease 1s;
+}
+
+.boxes .text {
+    width: 100%;
+    height: 25%;
+    /* background-color: chocolate; */
+    font-size: 80%;
+    text-align: center;
+
+}
+
+.text span {
+    text-decoration: line-through;
+    color: #b2abab;
+
+}
+
+.boxes .icons {
+    height: 35%;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.119);
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    bottom: 22%;
+    right: -20%;
+    font-size: 1.8vw;
+}
+
+.icons .icon {
+    padding: 6px;
+    border-radius: 200%;
+    background-color: #fff;
+}
+
+.icons .icon:hover {
+    background-color: black;
+    color: white;
+}
+
+/* .boxes2{
+    width: 25%;
+    height: 60%;
+    background-color: rgb(127, 255, 131);
+    position: relative;  
+cursor: pointer;
+overflow: hidden;
+} */
+.boxes2 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/9566_1120x.jpg?v=1658744936);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes2 :hover {
+    background-image: url(https://sxvstyle.com/cdn/shop/products/656_c91a2f7b-1910-4c09-86c7-62039f63ad40_1120x.jpg?v=1658744936);
+    scale: 1.01;
+    background-color: black;
+    transition: all ease 1s;
+}
+
+.boxes3 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/551_1120x.jpg?v=1658405396);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes3 :hover {
+    background-image: url(https://5.imimg.com/data5/ECOM/Default/2023/12/366974441/FO/CS/BT/13548708/323-500x500.jpg);
+    scale: 1.01;
+    background-color: black;
+    transition: all ease 1s;
+}
+
+.boxesline2 {
+    width: 100vw;
+    /* height: 100vh; */
+    /* background-color: crimson; */
+    display: flex;
+}
+
+.boxesline2 .text {
+    width: 100%;
+    height: 25%;
+    /* background-color: chocolate; */
+    font-size: 80%;
+    text-align: center;
+}
+
+.boxesline2 .icons {
+    height: 35%;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.119);
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    bottom: 22%;
+    right: -20%;
+    font-size: 1.8vw;
+}
+
+.boxes4 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/541copy_1120x.jpg?v=1659443658);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes4 :hover {
+    background-image: url(https://5.imimg.com/data5/ECOM/Default/2023/12/366976750/YY/QR/WW/13548708/6561-500x500.jpg);
+    scale: 1.01;
+    background-color: black;
+    transition: all ease 1s;
+}
+
+.boxes5 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/Untitled-3copy-min_1120x.webp?v=1677495241);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes6 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/LOVED_1120x.jpg?v=1657969281);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes7 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/6525copy_1120x.jpg?v=1658833668);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes8 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/65475copy_1120x.jpg?v=1662463949);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page3 {
+    width: 100vw;
+    height: auto;
+}
+
+.page3 .tags {
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    font-size: 110%;
+    font-family: sans-serif;
+}
+
+.boxesline3 {
+    width: 100vw;
+    /* height: 100vh; */
+    /* background-color: crimson; */
+    display: flex;
+}
+
+.boxesline3 .text {
+    width: 100%;
+    height: 25%;
+    font-size: 80%;
+    text-align: center;
+}
+
+.boxesline3 .icons {
+    height: 35%;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.119);
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    bottom: 22%;
+    right: -20%;
+    font-size: 1.8vw;
+}
+
+.boxes9 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/265copy_1120x.webp?v=1676027533);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes10 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/516copy_1120x.jpg?v=1662542687);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes11 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/SXV0063-min_1120x.jpg?v=1649324200);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes12 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/516copy_1120x.jpg?v=1662542687);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxesline4 {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+}
+
+.boxesline4 .text {
+    width: 100%;
+    height: 25%;
+    font-size: 80%;
+    text-align: center;
+}
+
+.boxesline4 .icons {
+    height: 35%;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.119);
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    bottom: 22%;
+    right: -20%;
+    font-size: 1.8vw;
+}
+
+.boxes13 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/6554_b1b9d0cd-8410-4466-bb10-497bfcb0c45d_1120x.jpg?v=1658831538);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes14 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/2_28df0f9f-ca09-4a8c-8e4b-fcc3f81529c3_1120x.webp?v=1677581048);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes15 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/SXV050-min_1120x.jpg?v=1649331099);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxes16 .img {
+    width: 100%;
+    height: 78%;
+    background-color: blueviolet;
+    background-image: url(https://sxvstyle.com/cdn/shop/products/SXV00082-min_1120x.jpg?v=1649160776);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page4{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F3EE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page4 .text{
+    width: 40%;
+    height: 100%;
+    padding-top: 10vw;
+    padding-left: 5vw;
+}
+.page4 .text h3{
+    font-size: 1vw;
+    font-family: sans-serif;
+}
+.page4 .text p{
+    font-size: 1.8vw;
+    padding-top:2vw ;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.page4 .img{
+    width: 40%;
+    height: 80%;
+    background-image: url("https://sxvstyle.com/cdn/shop/files/final-hoodie-cover-min_900x.webp?v=1682085802");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right:5vw ;
+}
+.page5{
+    width: 100vw;
+background-color: #F5F3EE;
+}
+.page5 .service{
+    width: 100vw;
+    height: 23vh;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2vw;
+background-color: #fff;
+}
+.page5 .service span{
+    font-size: 1.3vw;
+    color: #706b6b;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.page5 .service h1{
+    font-size:1.8vw;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.page5 .help{
+width: 100vw;
+padding: 5vw;
+display: flex;
+justify-content: space-between;
+}
+.page5 .help p{
+    font-size: 1.3vw;
+    font-family: monospace;
+    color: #585353;
+    padding: 0.8vw;
+    cursor: pointer;
+}
+.page5 .help p:hover{
+    text-decoration: underline;
+}
+.page5 .help span{
+    color: #000;
+    font-size: 1.4;
+    font-weight: 700;
+
+}
+.page5 .help span :hover{
+    text-decoration: none;
+}
+.page5 .news{
+    width: 26vw;
+    height: 20vh;
+    margin: 5vw;
+border-bottom: solid;
+}
+.page5 .news h1{
+    padding-bottom: 1.2vw;
+    font-size: 2vw;
+    font-family: monospace;
+}
+.page5 .news p{
+    padding-bottom: 1.2vw;
+    font-size: 1.2vw;
+    font-family: monospace;
+    color: #474141;
+}
+.page5 .news input{
+    padding: 1vw 4vw;
+    font-size: 1vw;
+border: none;
+background-color: #F5F3EE;
+}
+.page5 .icon {
+    margin-left: 5vw;
+    font-size: 2vw;
+}
+.page5 .copyright{
+    width: 100vw;
+    height: 13vh;
+text-align: center;
+border-top: solid rgb(185, 175, 175);
+color: rgb(90, 85, 85);
+font-size:1.4vw ;
+font-weight: 500;
+font-family: sans-serif;
+padding: 4vw;
+}
